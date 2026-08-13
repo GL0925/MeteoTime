@@ -1,0 +1,401 @@
+{"output": "results.txt", "fixed_origins": 6924, "contexts": [128, 256, 512, 1024], "models": ["persistence", "seasonal_naive_24h", "meteotime", "timesfm_2_5", "chronos2"]}
+
+=== Context 128h: overall 48h metrics ===
+[weather / pressure]
+  persistence          MAE=5.5924 RMSE=7.6156 MASE=1.0661
+  seasonal_naive_24h   MAE=8.6056 RMSE=11.4337 MASE=1.5754
+  meteotime            MAE=5.6529 RMSE=8.3464 MASE=1.1100
+  timesfm_2_5          MAE=5.4458 RMSE=7.6745 MASE=1.0792
+  chronos2             MAE=5.5842 RMSE=7.8381 MASE=1.0988
+[weather / relative_humidity]
+  persistence          MAE=8.7858 RMSE=11.2912 MASE=1.0086
+  seasonal_naive_24h   MAE=9.9938 RMSE=12.9522 MASE=1.1033
+  meteotime            MAE=7.0516 RMSE=8.9421 MASE=0.7964
+  timesfm_2_5          MAE=6.6506 RMSE=8.7771 MASE=0.7594
+  chronos2             MAE=6.9856 RMSE=9.3295 MASE=0.8077
+[weather / temperature]
+  persistence          MAE=1.7700 RMSE=2.5782 MASE=1.1401
+  seasonal_naive_24h   MAE=2.1240 RMSE=2.9299 MASE=1.3361
+  meteotime            MAE=1.6689 RMSE=2.3013 MASE=1.0634
+  timesfm_2_5          MAE=1.7646 RMSE=2.4542 MASE=1.1073
+  chronos2             MAE=1.5386 RMSE=2.2023 MASE=1.0149
+[weather / wind_speed]
+  persistence          MAE=1.4202 RMSE=1.9668 MASE=1.0223
+  seasonal_naive_24h   MAE=1.3575 RMSE=1.8203 MASE=0.9727
+  meteotime            MAE=0.9221 RMSE=1.2570 MASE=0.6867
+  timesfm_2_5          MAE=1.0961 RMSE=1.4834 MASE=0.8021
+  chronos2             MAE=1.1601 RMSE=1.5538 MASE=0.8384
+[marine_stations / pressure]
+  persistence          MAE=2.7432 RMSE=3.9844 MASE=1.1029
+  seasonal_naive_24h   MAE=3.4769 RMSE=4.7658 MASE=1.3712
+  meteotime            MAE=2.3081 RMSE=3.3512 MASE=0.9370
+  timesfm_2_5          MAE=2.4139 RMSE=3.5421 MASE=0.9836
+  chronos2             MAE=2.4943 RMSE=3.7052 MASE=1.0071
+[marine_stations / temperature]
+  persistence          MAE=1.9071 RMSE=14.9111 MASE=1.4842
+  seasonal_naive_24h   MAE=2.0010 RMSE=19.7036 MASE=1.3865
+  meteotime            MAE=1.5046 RMSE=14.8335 MASE=1.1496
+  timesfm_2_5          MAE=1.5543 RMSE=14.8418 MASE=1.1935
+  chronos2             MAE=1.6088 RMSE=14.8538 MASE=1.2138
+[marine_stations / wind_speed]
+  persistence          MAE=1.9154 RMSE=2.9956 MASE=1.0566
+  seasonal_naive_24h   MAE=2.1819 RMSE=3.5312 MASE=1.1444
+  meteotime            MAE=1.5979 RMSE=2.6319 MASE=0.8657
+  timesfm_2_5          MAE=1.6990 RMSE=2.7649 MASE=0.9136
+  chronos2             MAE=1.7584 RMSE=2.8150 MASE=0.9379
+[wind_farms / wind_speed]
+  persistence          MAE=2.7866 RMSE=4.1182 MASE=1.1090
+  seasonal_naive_24h   MAE=2.7779 RMSE=3.7007 MASE=1.1499
+  meteotime            MAE=2.2307 RMSE=3.2159 MASE=0.9198
+  timesfm_2_5          MAE=2.1777 RMSE=3.0955 MASE=0.9297
+  chronos2             MAE=2.3254 RMSE=3.4813 MASE=0.9713
+
+=== Context 128h: MeteoTime by segment ===
+[weather / pressure]
+    0-6h MAE=1.0343 RMSE=1.5196 MASE=0.2136
+   6-12h MAE=3.0589 RMSE=4.1673 MASE=0.6158
+  12-18h MAE=4.9495 RMSE=6.7098 MASE=0.9956
+  18-24h MAE=6.0636 RMSE=8.4590 MASE=1.1919
+  24-48h MAE=7.5293 RMSE=10.2598 MASE=1.4657
+[weather / relative_humidity]
+    0-6h MAE=3.9246 RMSE=4.8304 MASE=0.4591
+   6-12h MAE=6.3517 RMSE=8.5574 MASE=0.7089
+  12-18h MAE=5.9177 RMSE=7.1729 MASE=0.6949
+  18-24h MAE=7.3209 RMSE=8.9844 MASE=0.8644
+  24-48h MAE=8.2244 RMSE=10.1360 MASE=0.9110
+[weather / temperature]
+    0-6h MAE=0.5816 RMSE=0.7828 MASE=0.4023
+   6-12h MAE=1.0066 RMSE=1.2894 MASE=0.6025
+  12-18h MAE=1.6361 RMSE=2.2351 MASE=1.0069
+  18-24h MAE=1.7821 RMSE=2.8041 MASE=1.1245
+  24-48h MAE=2.0862 RMSE=2.6094 MASE=1.3428
+[weather / wind_speed]
+    0-6h MAE=0.6617 RMSE=0.8534 MASE=0.4773
+   6-12h MAE=0.7367 RMSE=1.0124 MASE=0.5100
+  12-18h MAE=0.8751 RMSE=1.1703 MASE=0.6436
+  18-24h MAE=1.1262 RMSE=1.4238 MASE=0.8956
+  24-48h MAE=0.9942 RMSE=1.3684 MASE=0.7417
+[marine_stations / pressure]
+    0-6h MAE=0.5286 RMSE=0.7643 MASE=0.2268
+   6-12h MAE=1.1057 RMSE=1.5662 MASE=0.4560
+  12-18h MAE=1.7104 RMSE=2.3872 MASE=0.6886
+  18-24h MAE=2.2393 RMSE=3.0822 MASE=0.8874
+  24-48h MAE=3.2203 RMSE=4.2313 MASE=1.3095
+[marine_stations / temperature]
+    0-6h MAE=0.8602 RMSE=20.0179 MASE=0.8337
+   6-12h MAE=1.1534 RMSE=1.8626 MASE=0.9637
+  12-18h MAE=1.2495 RMSE=2.0347 MASE=1.0535
+  18-24h MAE=1.1942 RMSE=2.0344 MASE=0.9349
+  24-48h MAE=1.8950 RMSE=18.3562 MASE=1.3527
+[marine_stations / wind_speed]
+    0-6h MAE=1.0539 RMSE=1.4991 MASE=0.5958
+   6-12h MAE=1.4419 RMSE=2.5298 MASE=0.7907
+  12-18h MAE=1.6693 RMSE=3.1741 MASE=0.8830
+  18-24h MAE=1.6091 RMSE=2.3128 MASE=0.8694
+  24-48h MAE=1.7522 RMSE=2.7993 MASE=0.9466
+[wind_farms / wind_speed]
+    0-6h MAE=0.9732 RMSE=1.2966 MASE=0.3951
+   6-12h MAE=1.6696 RMSE=2.3276 MASE=0.6011
+  12-18h MAE=1.8807 RMSE=2.5532 MASE=0.7510
+  18-24h MAE=2.4768 RMSE=3.3393 MASE=1.1419
+  24-48h MAE=2.7097 RMSE=3.8046 MASE=1.1164
+
+=== Context 256h: overall 48h metrics ===
+[weather / pressure]
+  persistence          MAE=5.5924 RMSE=7.6156 MASE=1.1417
+  seasonal_naive_24h   MAE=8.6056 RMSE=11.4337 MASE=1.7401
+  meteotime            MAE=6.3441 RMSE=9.2740 MASE=1.3708
+  timesfm_2_5          MAE=6.0905 RMSE=9.0541 MASE=1.3211
+  chronos2             MAE=6.2138 RMSE=9.2075 MASE=1.3335
+[weather / relative_humidity]
+  persistence          MAE=8.7858 RMSE=11.2912 MASE=1.0363
+  seasonal_naive_24h   MAE=9.9938 RMSE=12.9522 MASE=1.1324
+  meteotime            MAE=6.8055 RMSE=8.6850 MASE=0.7912
+  timesfm_2_5          MAE=6.9962 RMSE=8.8754 MASE=0.8142
+  chronos2             MAE=6.6051 RMSE=8.6218 MASE=0.7700
+[weather / temperature]
+  persistence          MAE=1.7700 RMSE=2.5782 MASE=1.1409
+  seasonal_naive_24h   MAE=2.1240 RMSE=2.9299 MASE=1.3402
+  meteotime            MAE=1.6901 RMSE=2.3262 MASE=1.0758
+  timesfm_2_5          MAE=1.6829 RMSE=2.3531 MASE=1.0660
+  chronos2             MAE=1.6811 RMSE=2.3221 MASE=1.0743
+[weather / wind_speed]
+  persistence          MAE=1.4202 RMSE=1.9668 MASE=1.1111
+  seasonal_naive_24h   MAE=1.3575 RMSE=1.8203 MASE=1.0546
+  meteotime            MAE=0.8977 RMSE=1.2435 MASE=0.7043
+  timesfm_2_5          MAE=0.9204 RMSE=1.3111 MASE=0.7152
+  chronos2             MAE=1.1237 RMSE=1.5550 MASE=0.8639
+[marine_stations / pressure]
+  persistence          MAE=2.7432 RMSE=3.9844 MASE=1.0417
+  seasonal_naive_24h   MAE=3.4769 RMSE=4.7658 MASE=1.2993
+  meteotime            MAE=2.3018 RMSE=3.3855 MASE=0.8793
+  timesfm_2_5          MAE=2.3234 RMSE=3.4286 MASE=0.8944
+  chronos2             MAE=2.3851 RMSE=3.5123 MASE=0.9144
+[marine_stations / temperature]
+  persistence          MAE=1.9071 RMSE=14.9111 MASE=1.3568
+  seasonal_naive_24h   MAE=2.0010 RMSE=19.7036 MASE=1.3056
+  meteotime            MAE=1.4570 RMSE=14.8132 MASE=1.0554
+  timesfm_2_5          MAE=1.5164 RMSE=14.8310 MASE=1.0912
+  chronos2             MAE=1.5477 RMSE=14.8546 MASE=1.0739
+[marine_stations / wind_speed]
+  persistence          MAE=1.9154 RMSE=2.9956 MASE=1.0102
+  seasonal_naive_24h   MAE=2.1819 RMSE=3.5312 MASE=1.1042
+  meteotime            MAE=1.5671 RMSE=2.5870 MASE=0.8113
+  timesfm_2_5          MAE=1.6262 RMSE=2.6694 MASE=0.8405
+  chronos2             MAE=1.6677 RMSE=2.7008 MASE=0.8567
+[wind_farms / wind_speed]
+  persistence          MAE=2.7866 RMSE=4.1182 MASE=1.0149
+  seasonal_naive_24h   MAE=2.7779 RMSE=3.7007 MASE=1.0531
+  meteotime            MAE=2.1398 RMSE=2.9883 MASE=0.8019
+  timesfm_2_5          MAE=2.0870 RMSE=2.9132 MASE=0.8008
+  chronos2             MAE=2.2071 RMSE=3.0560 MASE=0.8314
+
+=== Context 256h: MeteoTime by segment ===
+[weather / pressure]
+    0-6h MAE=1.0516 RMSE=1.6171 MASE=0.2209
+   6-12h MAE=3.2330 RMSE=4.4364 MASE=0.6951
+  12-18h MAE=5.3085 RMSE=7.2371 MASE=1.1514
+  18-24h MAE=6.7067 RMSE=9.2036 MASE=1.4533
+  24-48h MAE=8.6133 RMSE=11.4965 MASE=1.8613
+[weather / relative_humidity]
+    0-6h MAE=3.8240 RMSE=4.5679 MASE=0.4481
+   6-12h MAE=6.5847 RMSE=9.0072 MASE=0.7558
+  12-18h MAE=6.2658 RMSE=7.9249 MASE=0.7616
+  18-24h MAE=7.0714 RMSE=8.7272 MASE=0.8816
+  24-48h MAE=7.6744 RMSE=9.5193 MASE=0.8706
+[weather / temperature]
+    0-6h MAE=0.6509 RMSE=0.8369 MASE=0.4190
+   6-12h MAE=1.0211 RMSE=1.3239 MASE=0.6148
+  12-18h MAE=1.7067 RMSE=2.2251 MASE=1.0895
+  18-24h MAE=1.8639 RMSE=2.8095 MASE=1.1759
+  24-48h MAE=2.0695 RMSE=2.6453 MASE=1.3268
+[weather / wind_speed]
+    0-6h MAE=0.6417 RMSE=0.8235 MASE=0.4996
+   6-12h MAE=0.7587 RMSE=1.0488 MASE=0.5741
+  12-18h MAE=0.8960 RMSE=1.1889 MASE=0.7027
+  18-24h MAE=1.0995 RMSE=1.4250 MASE=0.8832
+  24-48h MAE=0.9464 RMSE=1.3367 MASE=0.7437
+[marine_stations / pressure]
+    0-6h MAE=0.5277 RMSE=0.7625 MASE=0.2107
+   6-12h MAE=1.1277 RMSE=1.6091 MASE=0.4326
+  12-18h MAE=1.7412 RMSE=2.4421 MASE=0.6567
+  18-24h MAE=2.2786 RMSE=3.1728 MASE=0.8520
+  24-48h MAE=3.1850 RMSE=4.2572 MASE=1.2206
+[marine_stations / temperature]
+    0-6h MAE=0.8433 RMSE=20.0098 MASE=0.7403
+   6-12h MAE=1.1049 RMSE=1.7475 MASE=0.8783
+  12-18h MAE=1.2111 RMSE=1.9736 MASE=0.9613
+  18-24h MAE=1.1618 RMSE=1.9795 MASE=0.8829
+  24-48h MAE=1.8336 RMSE=18.3316 MASE=1.2451
+[marine_stations / wind_speed]
+    0-6h MAE=1.0391 RMSE=1.4804 MASE=0.5653
+   6-12h MAE=1.4075 RMSE=2.4841 MASE=0.7369
+  12-18h MAE=1.6390 RMSE=3.1353 MASE=0.8309
+  18-24h MAE=1.5817 RMSE=2.2770 MASE=0.8148
+  24-48h MAE=1.7173 RMSE=2.7460 MASE=0.8857
+[wind_farms / wind_speed]
+    0-6h MAE=0.9362 RMSE=1.2391 MASE=0.3654
+   6-12h MAE=1.6689 RMSE=2.3841 MASE=0.5857
+  12-18h MAE=1.9186 RMSE=2.5841 MASE=0.7849
+  18-24h MAE=2.3120 RMSE=3.0723 MASE=0.8806
+  24-48h MAE=2.5697 RMSE=3.4664 MASE=0.9477
+
+=== Context 512h: overall 48h metrics ===
+[weather / pressure]
+  persistence          MAE=5.5924 RMSE=7.6156 MASE=1.1084
+  seasonal_naive_24h   MAE=8.6056 RMSE=11.4337 MASE=1.7171
+  meteotime            MAE=5.9945 RMSE=8.7582 MASE=1.1978
+  timesfm_2_5          MAE=5.9149 RMSE=8.5861 MASE=1.1823
+  chronos2             MAE=5.5693 RMSE=7.8877 MASE=1.1111
+[weather / relative_humidity]
+  persistence          MAE=8.7858 RMSE=11.2912 MASE=0.9790
+  seasonal_naive_24h   MAE=9.9938 RMSE=12.9522 MASE=1.0920
+  meteotime            MAE=6.7385 RMSE=8.6366 MASE=0.7408
+  timesfm_2_5          MAE=7.2039 RMSE=9.0996 MASE=0.7894
+  chronos2             MAE=6.8098 RMSE=9.0047 MASE=0.7560
+[weather / temperature]
+  persistence          MAE=1.7700 RMSE=2.5782 MASE=1.1118
+  seasonal_naive_24h   MAE=2.1240 RMSE=2.9299 MASE=1.3007
+  meteotime            MAE=1.6221 RMSE=2.3104 MASE=1.0158
+  timesfm_2_5          MAE=1.6751 RMSE=2.4273 MASE=1.0463
+  chronos2             MAE=1.6819 RMSE=2.3305 MASE=1.0452
+[weather / wind_speed]
+  persistence          MAE=1.4202 RMSE=1.9668 MASE=1.1480
+  seasonal_naive_24h   MAE=1.3575 RMSE=1.8203 MASE=1.0907
+  meteotime            MAE=0.9258 RMSE=1.2973 MASE=0.7506
+  timesfm_2_5          MAE=0.9435 RMSE=1.3232 MASE=0.7655
+  chronos2             MAE=1.1235 RMSE=1.4881 MASE=0.9076
+[marine_stations / pressure]
+  persistence          MAE=2.7432 RMSE=3.9844 MASE=1.0019
+  seasonal_naive_24h   MAE=3.4769 RMSE=4.7658 MASE=1.2613
+  meteotime            MAE=2.3422 RMSE=3.4687 MASE=0.8478
+  timesfm_2_5          MAE=2.3257 RMSE=3.4086 MASE=0.8467
+  chronos2             MAE=2.2976 RMSE=3.3858 MASE=0.8395
+[marine_stations / temperature]
+  persistence          MAE=1.9071 RMSE=14.9111 MASE=1.3062
+  seasonal_naive_24h   MAE=2.0010 RMSE=19.7036 MASE=1.3233
+  meteotime            MAE=1.4833 RMSE=14.8172 MASE=1.0757
+  timesfm_2_5          MAE=1.5284 RMSE=14.8231 MASE=1.1059
+  chronos2             MAE=1.5228 RMSE=14.8288 MASE=1.0267
+[marine_stations / wind_speed]
+  persistence          MAE=1.9154 RMSE=2.9956 MASE=0.9866
+  seasonal_naive_24h   MAE=2.1819 RMSE=3.5312 MASE=1.0850
+  meteotime            MAE=1.5337 RMSE=2.5380 MASE=0.7764
+  timesfm_2_5          MAE=1.5863 RMSE=2.6131 MASE=0.8003
+  chronos2             MAE=1.6372 RMSE=2.6411 MASE=0.8266
+[wind_farms / wind_speed]
+  persistence          MAE=2.7866 RMSE=4.1182 MASE=0.9852
+  seasonal_naive_24h   MAE=2.7779 RMSE=3.7007 MASE=0.9986
+  meteotime            MAE=2.1069 RMSE=2.8822 MASE=0.7537
+  timesfm_2_5          MAE=1.9202 RMSE=2.6965 MASE=0.7066
+  chronos2             MAE=2.1870 RMSE=2.9866 MASE=0.7946
+
+=== Context 512h: MeteoTime by segment ===
+[weather / pressure]
+    0-6h MAE=0.9522 RMSE=1.4411 MASE=0.1864
+   6-12h MAE=3.0953 RMSE=4.0603 MASE=0.6121
+  12-18h MAE=5.0977 RMSE=6.6964 MASE=1.0119
+  18-24h MAE=6.5300 RMSE=8.6091 MASE=1.3003
+  24-48h MAE=8.0703 RMSE=10.9101 MASE=1.6179
+[weather / relative_humidity]
+    0-6h MAE=3.6379 RMSE=4.4910 MASE=0.3984
+   6-12h MAE=6.8274 RMSE=9.1549 MASE=0.7691
+  12-18h MAE=6.2703 RMSE=7.8502 MASE=0.7046
+  18-24h MAE=6.8979 RMSE=8.5295 MASE=0.7607
+  24-48h MAE=7.5687 RMSE=9.4653 MASE=0.8234
+[weather / temperature]
+    0-6h MAE=0.6327 RMSE=0.8082 MASE=0.3975
+   6-12h MAE=0.9646 RMSE=1.2831 MASE=0.5939
+  12-18h MAE=1.6059 RMSE=2.2062 MASE=1.0368
+  18-24h MAE=1.7853 RMSE=2.7999 MASE=1.1530
+  24-48h MAE=1.9972 RMSE=2.6313 MASE=1.2363
+[weather / wind_speed]
+    0-6h MAE=0.6610 RMSE=0.8336 MASE=0.5320
+   6-12h MAE=0.8468 RMSE=1.1470 MASE=0.6646
+  12-18h MAE=0.9729 RMSE=1.2819 MASE=0.7816
+  18-24h MAE=1.1026 RMSE=1.4719 MASE=0.9121
+  24-48h MAE=0.9557 RMSE=1.3823 MASE=0.7786
+[marine_stations / pressure]
+    0-6h MAE=0.5223 RMSE=0.7499 MASE=0.2001
+   6-12h MAE=1.1192 RMSE=1.5897 MASE=0.4102
+  12-18h MAE=1.7410 RMSE=2.4423 MASE=0.6236
+  18-24h MAE=2.3041 RMSE=3.2261 MASE=0.8157
+  24-48h MAE=3.2629 RMSE=4.3816 MASE=1.1832
+[marine_stations / temperature]
+    0-6h MAE=0.8500 RMSE=20.0103 MASE=0.7222
+   6-12h MAE=1.1159 RMSE=1.7711 MASE=0.8784
+  12-18h MAE=1.2335 RMSE=2.0084 MASE=0.9714
+  18-24h MAE=1.1962 RMSE=2.0228 MASE=0.9043
+  24-48h MAE=1.8678 RMSE=18.3353 MASE=1.2822
+[marine_stations / wind_speed]
+    0-6h MAE=1.0237 RMSE=1.4647 MASE=0.5433
+   6-12h MAE=1.3857 RMSE=2.4603 MASE=0.7098
+  12-18h MAE=1.5956 RMSE=3.0903 MASE=0.7936
+  18-24h MAE=1.5348 RMSE=2.2014 MASE=0.7772
+  24-48h MAE=1.6825 RMSE=2.6896 MASE=0.8468
+[wind_farms / wind_speed]
+    0-6h MAE=0.9389 RMSE=1.2411 MASE=0.3398
+   6-12h MAE=1.7567 RMSE=2.4758 MASE=0.5950
+  12-18h MAE=1.9751 RMSE=2.6365 MASE=0.7211
+  18-24h MAE=2.2579 RMSE=2.9457 MASE=0.8214
+  24-48h MAE=2.4809 RMSE=3.2838 MASE=0.8863
+
+=== Context 1024h: overall 48h metrics ===
+[weather / pressure]
+  persistence          MAE=5.5924 RMSE=7.6156 MASE=1.1315
+  seasonal_naive_24h   MAE=8.6056 RMSE=11.4337 MASE=1.7384
+  meteotime            MAE=5.9611 RMSE=8.7372 MASE=1.2286
+  timesfm_2_5          MAE=5.5517 RMSE=7.8741 MASE=1.1487
+  chronos2             MAE=5.4187 RMSE=7.7098 MASE=1.1114
+[weather / relative_humidity]
+  persistence          MAE=8.7858 RMSE=11.2912 MASE=0.9674
+  seasonal_naive_24h   MAE=9.9938 RMSE=12.9522 MASE=1.0929
+  meteotime            MAE=6.5884 RMSE=8.5037 MASE=0.7237
+  timesfm_2_5          MAE=7.0034 RMSE=8.9646 MASE=0.7661
+  chronos2             MAE=6.6671 RMSE=8.7602 MASE=0.7323
+[weather / temperature]
+  persistence          MAE=1.7700 RMSE=2.5782 MASE=0.8884
+  seasonal_naive_24h   MAE=2.1240 RMSE=2.9299 MASE=1.0552
+  meteotime            MAE=1.5671 RMSE=2.2334 MASE=0.7785
+  timesfm_2_5          MAE=1.6029 RMSE=2.3106 MASE=0.7969
+  chronos2             MAE=1.7265 RMSE=2.3662 MASE=0.8576
+[weather / wind_speed]
+  persistence          MAE=1.4202 RMSE=1.9668 MASE=1.2046
+  seasonal_naive_24h   MAE=1.3575 RMSE=1.8203 MASE=1.1456
+  meteotime            MAE=0.9070 RMSE=1.2834 MASE=0.7691
+  timesfm_2_5          MAE=0.9773 RMSE=1.3317 MASE=0.8307
+  chronos2             MAE=1.0231 RMSE=1.3888 MASE=0.8667
+[marine_stations / pressure]
+  persistence          MAE=2.7432 RMSE=3.9844 MASE=0.9873
+  seasonal_naive_24h   MAE=3.4769 RMSE=4.7658 MASE=1.2439
+  meteotime            MAE=2.3658 RMSE=3.4954 MASE=0.8435
+  timesfm_2_5          MAE=2.3421 RMSE=3.4529 MASE=0.8365
+  chronos2             MAE=2.2997 RMSE=3.3756 MASE=0.8245
+[marine_stations / temperature]
+  persistence          MAE=1.9071 RMSE=14.9111 MASE=46.8075
+  seasonal_naive_24h   MAE=2.0010 RMSE=19.7036 MASE=46.9328
+  meteotime            MAE=1.4917 RMSE=14.8189 MASE=46.7189
+  timesfm_2_5          MAE=1.4912 RMSE=14.8190 MASE=46.6918
+  chronos2             MAE=1.4928 RMSE=14.8220 MASE=46.5242
+[marine_stations / wind_speed]
+  persistence          MAE=1.9154 RMSE=2.9956 MASE=0.9665
+  seasonal_naive_24h   MAE=2.1819 RMSE=3.5312 MASE=1.0664
+  meteotime            MAE=1.5266 RMSE=2.5325 MASE=0.7559
+  timesfm_2_5          MAE=1.5665 RMSE=2.5708 MASE=0.7752
+  chronos2             MAE=1.5799 RMSE=2.5672 MASE=0.7842
+[wind_farms / wind_speed]
+  persistence          MAE=2.7866 RMSE=4.1182 MASE=0.9346
+  seasonal_naive_24h   MAE=2.7779 RMSE=3.7007 MASE=0.9339
+  meteotime            MAE=2.0081 RMSE=2.7115 MASE=0.6737
+  timesfm_2_5          MAE=2.0354 RMSE=2.7549 MASE=0.6848
+  chronos2             MAE=2.0984 RMSE=2.8983 MASE=0.7080
+
+=== Context 1024h: MeteoTime by segment ===
+[weather / pressure]
+    0-6h MAE=0.9073 RMSE=1.3513 MASE=0.1837
+   6-12h MAE=3.0111 RMSE=3.9271 MASE=0.6161
+  12-18h MAE=5.0903 RMSE=6.5861 MASE=1.0492
+  18-24h MAE=6.5616 RMSE=8.5759 MASE=1.3525
+  24-48h MAE=8.0296 RMSE=10.9149 MASE=1.6568
+[weather / relative_humidity]
+    0-6h MAE=3.9773 RMSE=4.7211 MASE=0.4379
+   6-12h MAE=6.7367 RMSE=8.9313 MASE=0.7327
+  12-18h MAE=6.1788 RMSE=7.6932 MASE=0.6792
+  18-24h MAE=6.7889 RMSE=8.5148 MASE=0.7538
+  24-48h MAE=7.2564 RMSE=9.2838 MASE=0.7965
+[weather / temperature]
+    0-6h MAE=0.6735 RMSE=0.8219 MASE=0.3312
+   6-12h MAE=0.8743 RMSE=1.1519 MASE=0.4317
+  12-18h MAE=1.5604 RMSE=2.0889 MASE=0.7895
+  18-24h MAE=1.7499 RMSE=2.7321 MASE=0.8886
+  24-48h MAE=1.9197 RMSE=2.5532 MASE=0.9467
+[weather / wind_speed]
+    0-6h MAE=0.6753 RMSE=0.8506 MASE=0.5708
+   6-12h MAE=0.8265 RMSE=1.1397 MASE=0.6832
+  12-18h MAE=0.9409 RMSE=1.2599 MASE=0.7942
+  18-24h MAE=1.0657 RMSE=1.4356 MASE=0.9197
+  24-48h MAE=0.9369 RMSE=1.3698 MASE=0.7963
+[marine_stations / pressure]
+    0-6h MAE=0.5275 RMSE=0.7579 MASE=0.1967
+   6-12h MAE=1.1215 RMSE=1.5803 MASE=0.4047
+  12-18h MAE=1.7506 RMSE=2.4220 MASE=0.6205
+  18-24h MAE=2.3249 RMSE=3.2047 MASE=0.8162
+  24-48h MAE=3.3006 RMSE=4.4312 MASE=1.1775
+[marine_stations / temperature]
+    0-6h MAE=0.8624 RMSE=20.0063 MASE=0.6515
+   6-12h MAE=1.1411 RMSE=1.8143 MASE=0.9538
+  12-18h MAE=1.2450 RMSE=2.0775 MASE=1.0488
+  18-24h MAE=1.1959 RMSE=2.0737 MASE=0.9869
+  24-48h MAE=1.8723 RMSE=18.3347 MASE=92.5275
+[marine_stations / wind_speed]
+    0-6h MAE=1.0254 RMSE=1.4661 MASE=0.5298
+   6-12h MAE=1.3943 RMSE=2.4628 MASE=0.6975
+  12-18h MAE=1.5932 RMSE=3.0795 MASE=0.7734
+  18-24h MAE=1.5333 RMSE=2.2042 MASE=0.7610
+  24-48h MAE=1.6667 RMSE=2.6811 MASE=0.8215
+[wind_farms / wind_speed]
+    0-6h MAE=0.9187 RMSE=1.1968 MASE=0.3062
+   6-12h MAE=1.6952 RMSE=2.3070 MASE=0.5600
+  12-18h MAE=1.9475 RMSE=2.5638 MASE=0.6491
+  18-24h MAE=2.1716 RMSE=2.7700 MASE=0.7264
+  24-48h MAE=2.3326 RMSE=3.0742 MASE=0.7849
