@@ -8,7 +8,7 @@ MeteoTime is an autoregressive time-series model for hourly meteorological data.
 
 - ~32M parameter Decoder-only Transformer
 - Max input: 2048 hours, Patch size: 32
-- Single forward pass predicts 62 hours (2 patches) ahead
+- Single forward pass predicts 64 hours ahead
 - 9 quantile outputs: `0.05, 0.10, 0.20, 0.30, 0.50, 0.70, 0.80, 0.90, 0.95`
 - Pre-RMSNorm, RoPE, QK-Norm, SwiGLU, causal SDPA
 - BF16 mixed precision, 6-card DDP training
