@@ -8,7 +8,7 @@ MeteoTime 是面向气象小时序列的自回归时序预测模型，执行单�
 
 - 约 32M 参数的 Decoder-only Transformer
 - 最大输入 2048 小时，Patch 大小 32
-- 单次前向传播预测未来 64 小时（2 个 Patch）
+- 单次前向传播预测未来 64 小时
 - 输出 9 个分位数：`0.05, 0.10, 0.20, 0.30, 0.50, 0.70, 0.80, 0.90, 0.95`
 - Pre-RMSNorm、RoPE、QK-Norm、SwiGLU、因果 SDPA
 - BF16 混合精度、六卡 DDP 训练
