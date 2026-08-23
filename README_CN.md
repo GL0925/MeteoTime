@@ -1,6 +1,6 @@
 # 🌤️ MeteoTime
 
-> **轻量化气象时序零样本预测模型**
+> **轻量化气象时序基座大模型**
 
 [English](README.md) | [中文](README_CN.md)
 
