@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| 🧩 **Lightweight** | Only **~33.2M** parameters — orders of magnitude smaller than LLM-based forecasting models |
+| 🧩 **Lightweight** | Only **~33.2M** parameters — orders of magnitude smaller than time-series forecasting foundation models |
 | 🔮 **Long-Range Context** | Supports up to **1024 time steps** of context for zero-shot generalization |
 | 📊 **Top-Tier Performance** | Dominates across **3 benchmarks**, **8 tasks**, **32 comparison experiments** |
 
