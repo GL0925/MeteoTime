@@ -1,13 +1,39 @@
-# MeteoTime
+# 🌤️ MeteoTime
+
+> **Lightweight autoregressive model for zero-shot meteorological time-series forecasting**
 
 [English](README.md) | [中文](README_CN.md)
 
-MeteoTime is an autoregressive time-series model for hourly meteorological data. It performs univariate probabilistic forecasting with quantile outputs.
+## ✨ Highlights
+
+| | |
+|---|---|
+| 🧩 **Lightweight** | Only **~33.2M** parameters — orders of magnitude smaller than LLM-based forecasting models |
+| 🔮 **Long-Range Context** | Supports up to **1024 time steps** of context for zero-shot generalization |
+| 📊 **Top-Tier Performance** | Dominates across **3 benchmarks**, **8 tasks**, **32 comparison experiments** |
+
+### 🏆 Benchmark Results
+
+**Input Length = 512 (3 benchmarks × 8 tasks)**
+
+| Rank | Count | Share |
+|------|-------|-------|
+| 🥇 Best | **5 / 8** | 62.5% |
+| 🥈 Runner-up | **2 / 8** | 25% |
+
+**Full Sweep: 128 / 256 / 512 / 1024 × 8 tasks = 32 comparisons**
+
+| Rank | Count | Share |
+|------|-------|-------|
+| 🥇 Best | **18 / 32** | 56.3% |
+| 🥈 Runner-up | **6 / 32** | 18.8% |
+
+> MeteoTime achieves competitive or superior results to Google TimesFM 2.5 and Amazon Chronos 2 while being **6× smaller** than TimesFM-200M.
 
 ## Architecture
 
-- ~32M parameter Decoder-only Transformer
-- Max input: 2048 hours, Patch size: 32
+- ~33.2M parameter Decoder-only Transformer
+- Max input: 1024 hours, Patch size: 32
 - Single forward pass predicts 64 hours ahead
 - 9 quantile outputs: `0.05, 0.10, 0.20, 0.30, 0.50, 0.70, 0.80, 0.90, 0.95`
 - Pre-RMSNorm, RoPE, QK-Norm, SwiGLU, causal SDPA
