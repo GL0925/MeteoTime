@@ -14,7 +14,7 @@
 
 ### 🏆 Benchmark Results
 
-**Input Length = 512 (3 benchmarks × 8 tasks)**
+**Input Length = 512 (3 benchmarks with a total of 8 tasks)**
 
 | Rank | Count | Share |
 |------|-------|-------|
